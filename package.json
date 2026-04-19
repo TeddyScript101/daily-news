@@ -9,6 +9,7 @@
     "run-now": "node -e \"import('./src/pipeline.js').then(m => m.runPipeline())\""
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "axios": "^1.7.9",
     "node-cron": "^3.0.3",
     "nodemailer": "^6.9.16",
