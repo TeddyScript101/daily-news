@@ -1,0 +1,17 @@
+{
+  "name": "daily-news",
+  "version": "1.0.0",
+  "description": "Daily news automation: fetch, summarize in Chinese, email + Notion",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "run-now": "node -e \"import('./src/pipeline.js').then(m => m.runPipeline())\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
+    "rss-parser": "^3.13.0"
+  }
+}
