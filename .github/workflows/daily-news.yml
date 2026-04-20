@@ -2,8 +2,8 @@ name: Daily News
 
 on:
   schedule:
-    # 01:00 UTC = 09:00 HKT (香港/台北時間)
-    - cron: '0 1 * * *'
+    # 02:00 UTC = 12:00 墨爾本時間 (UTC+10) = 10:00 HKT
+    - cron: '0 2 * * *'
   workflow_dispatch:       # 保持手動觸發按鈕，方便測試
 
 jobs:
