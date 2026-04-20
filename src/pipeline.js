@@ -4,7 +4,9 @@ import { sendEmail } from "./email.js";
 
 // Allow running directly: node src/pipeline.js
 if (process.argv[1].endsWith("pipeline.js")) {
-  runPipeline().catch((err) => { console.error(err); process.exit(1); });
+  runPipeline()
+    .then(() => process.exit(0))
+    .catch((err) => { console.error(err); process.exit(1); });
 }
 
 export async function runPipeline() {
