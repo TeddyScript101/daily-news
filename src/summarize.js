@@ -31,6 +31,7 @@ export async function summarizeNews(articles) {
     .join("\n\n");
 
   const today = new Date().toLocaleDateString("zh-TW", {
+    timeZone: "Asia/Hong_Kong",
     year: "numeric",
     month: "long",
     day: "numeric",

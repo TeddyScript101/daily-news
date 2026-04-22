@@ -29,6 +29,7 @@ export async function sendEmail(subject, markdownContent, articles) {
   });
 
   const today = new Date().toLocaleDateString("zh-TW", {
+    timeZone: "Asia/Hong_Kong",
     year: "numeric",
     month: "long",
     day: "numeric",
